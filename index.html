@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <link href = "style.css" rel = "stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"><title>1010</title>
+		<title>Tenten</title>
+		
+		<!-- <script type="text/javascript" src="cordova.js"></script> -->
+		<script src = "LAB.min.js"></script>
+		<script>
+			$LAB
+					.script('geom/Vector2.js').wait()
+					.script('geom/Matrix.js').wait()
+					.script('geom/Rectangle.js').wait()
+					.script('input/ButtonState.js').wait()
+					.script('input/Mouse.js').wait()
+					.script('input/Touch.js').wait()
+					.script('Sound.js').wait()
+					.script('Canvas2D.js').wait()
+					.script('Images.js').wait()
+					.script('Game.js').wait()
+					.script('TenTen.js').wait()
+					.script('ButtonClass.js').wait()
+					.script('AnimatedButtonClass.js').wait()
+					.script('gameObjects/ScreenClass.js').wait()
+					.script('gameObjects/titleScreen.js').wait()
+					.script('gameObjects/settingsScreen.js').wait()
+					.script('gameObjects/restartScreen.js').wait()
+					.script('gameObjects/gameButtons.js').wait()
+					.script('gameObjects/Grid.js').wait()
+					.script('gameObjects/FigurePanel.js').wait()
+					.script('gameObjects/FigureClass.js').wait()
+					.script('gameObjects/Figures.js').wait()
+					.script('TentenGameWorld.js').wait(function () {
+						Game.start('gameArea','myCanvas', 576, 1024);
+					});
+		</script>
+	</head>
+    <body>
+		<div id="gameArea">
+			<canvas id="myCanvas"></canvas>
+		</div>
+	</body>
+</html>
